@@ -1,0 +1,195 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    
+}
+
+body{
+    background-color: #f4f2ee;
+    font-family: Helvetica, Arial,sans-serif;
+    
+}
+
+#resume{
+    width:60%;
+    margin:auto;
+    padding-top:2%;
+}
+
+#about1{
+    height:30vh;
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+#profilepic {
+    border-radius: 50%;
+    width:125px;
+    position:absolute;
+    top:110px;
+    left:30px;
+    
+  }
+  
+
+#main{
+    border:#f4f2ee solid 1px;
+    border-radius: 10px;
+    background-color: #fff ;
+    position:relative;
+    padding-bottom:20px;
+    margin-bottom: 6px;
+}
+
+#about, #edu, #projects, #skills, #certi, #extra{
+    border:#f4f2ee solid 1px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 25px;
+    margin-bottom: 6px;
+}
+
+h1{
+    padding:35px 0 0 25px;
+}
+
+
+
+#main p{
+    padding-left:25px;
+}
+
+
+.education{
+    display:flex;
+    padding-top:20px;
+}
+
+#edu img, #edu .fa{
+    width:50px;
+    height:50px;
+    text-align: center;
+}
+
+.clginfo{
+    padding-left:10px;
+}
+
+
+.clginfo p{
+    color: #555350;
+    font-size:small;
+}
+
+.projinfo{
+    padding-top:20px;
+}
+
+#projects li{
+    font-size: 14px;
+}
+
+button{
+    background-color: #fff;
+    border-radius: 20px;
+    border: black solid 1px;
+    color: #555350;
+    padding:6px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #f4f2ee;
+}
+
+.skillsinfo{
+    padding-top:20px;
+}
+
+.skillsinfo p{
+    padding:10px 0 10px 0;
+}
+
+.skillstitle{
+    font-weight: 600;
+}
+
+hr{
+    border-top: 1px solid rgb(140 140 140/.2);
+}
+
+.certifications{
+    display: flex;
+    padding-top:20px;
+}
+
+#certi img{
+    width:50px;
+    height:50px;
+}
+
+.certiinfo{
+    padding-left:10px;
+}
+
+.certiinfo p{
+    color: #555350;
+    font-size:small;
+}
+
+.achiinfo{
+    padding-top:20px;
+}
+
+
+/* 320 480 mobile 
+481 768 ipads
+769 1024 laptops
+1025 1200 desktops */
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)  {
+    #about1{
+        height:30vh;
+    }
+    #profilepic {
+        top:95px;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    #about1{
+        height:25vh;
+    }
+    #profilepic {
+        width:120px;
+        top:65px;
+      }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    #resume{
+        width:80%;
+    }
+    #about1{
+        height:25vh;
+    }
+    #profilepic {
+        width:120px;
+        top:65px;
+      }
+}
+
+@media screen and (max-width: 481px){
+    #resume{
+        width:95%;
+    }
+    #about1{
+        height:25vh;
+    }
+    #profilepic {
+        width:120px;
+        top:65px;
+      }
+}
